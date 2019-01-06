@@ -1,0 +1,25 @@
+<div class="content-wrap">
+        <div class="article" *ngFor="let article of articles">
+            <h3 class="title" [class.hot]="article.yd>1000" >{{article.title}}</h3>
+            <p class="zy">{{article.zy}}</p>
+            <p class="info">
+                <span>2018-11-18 21:15:00</span>&nbsp;&nbsp;
+                <span>阅读数:{{article.yd}}</span>&nbsp;&nbsp;
+                <span>评论数:{{article.pl}}</span>&nbsp;&nbsp;
+            </p>
+        </div>
+
+        <div class="article">
+            <h3 class="title">Angular常用操作</h3>
+            <p class="zy">
+                本节来介绍angular中的操作以及TypeScript语法的简单介绍。关于TypeScript语法的更为详细的内容，
+                打算在整个angular教程结束后再单独介绍...
+            </p>
+            <p class="info">
+                <span>2018-11-18 21:15:</span>&nbsp;&nbsp;
+                <span>阅读数：37</span>&nbsp;&nbsp;
+                <span>评论数：2</span>&nbsp;&nbsp;
+            </p>
+        </div>
+    ​
+    </div>

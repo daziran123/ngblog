@@ -1,0 +1,20 @@
+<div class="panel panel-info hot">
+    <div class="panel-heading">
+        热门文章
+    </div>
+    <div class="panel-body">
+        <div class="media"  *ngFor="let media of medias">
+            <div class="media-left">
+                <a href="#">
+                    <img src="{{media.img}}" alt="" class="media-object">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">{{media.heading}}</h4>
+                <p>{{media.body}}</p>
+            </div>
+        </div>
+        
+       
+    </div>
+</div>
